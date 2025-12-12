@@ -36,9 +36,8 @@ movie-recommendation-system/
 │   ├── requirements.txt              # Python dependencies
 │   ├── models/                       # Trained models directory
 │   │   └── lightweight_model.pkl     # Trained model (generated)
-│   └── data/                         # Dataset files
-│       ├── movies.csv                # Movies dataset
-│       └── ratings.csv               # User ratings dataset
+│   ├── movies.csv                    # Movies dataset
+│   └── ratings.csv                   # User ratings dataset
 │
 ├── frontend/                         # React Vite Application
 │   ├── public/
@@ -47,14 +46,21 @@ movie-recommendation-system/
 │   │   ├── App.jsx                   # Main integrated app
 │   │   ├── main.jsx                  # Entry point
 │   │   └── index.css                 # Global styles
+│   ├── components/
+│   │   ├── ErrorAlert.jsx            # Error Alert
+│   │   ├── LoadingSpinner.jsx        # Loading Spinner
+│   │   └── MovieCard.css
+│   ├── pages/               
+│   │   └── Movie.jsx                 # Main File
+│   ├── service/               
+│   │   └── api.js                    # API Call Function
 │   │
 │   ├── index.html
 │   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── postcss.config.js
+│   └── vite.config.js
 │
 └── README.md                         # This file
+└── .gitignore                        
 ```
 
 ## 🚀 Quick Start
